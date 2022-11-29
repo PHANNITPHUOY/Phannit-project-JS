@@ -6,6 +6,16 @@ let products = [
     {"img":"https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg", "name":"Pizza", "price":"$10"},
     {"img":"https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg", "name":"Pizza", "price":"$10"},
     {"img":"https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg", "name":"Pizza", "price":"$10"},
+    {"img":"https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg", "name":"Pizza", "price":"$10"},
+    {"img":"https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg", "name":"Pizza", "price":"$10"},
+    {"img":"https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg", "name":"Pizza", "price":"$10"},
+    {"img":"https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg", "name":"Pizza", "price":"$10"},
+    {"img":"https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg", "name":"Pizza", "price":"$10"},
+    {"img":"https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg", "name":"Pizza", "price":"$10"},
+    {"img":"https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg", "name":"Pizza", "price":"$10"},
+    {"img":"https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg", "name":"Pizza", "price":"$10"},
+    {"img":"https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg", "name":"Pizza", "price":"$10"},
+    {"img":"https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg", "name":"Pizza", "price":"$10"},
 
 ]
  let container = document.querySelector(".list-items");
@@ -13,7 +23,7 @@ let products = [
     for(let index in products){
         let card = document.createElement("div");
         card.className = "card";
-       let image = document.createElement("div");
+       let image = document.createElement("img");
         image.src=products[index]["img"];
         console.log(image)
        let nameOfProduct = document.createElement("h3");

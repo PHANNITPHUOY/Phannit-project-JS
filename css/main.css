@@ -103,6 +103,7 @@ a:hover {
 }
 .card img {
   margin: 7% 5% 0% 13%;
+  width: 200px;
 }
 .card h3 {
   text-align: center;
