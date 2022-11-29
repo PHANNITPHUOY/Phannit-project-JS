@@ -1,0 +1,33 @@
+.content-top, .content-buttom{
+    justify-content: center;
+    display: flex;
+}
+.content-top{
+    margin-top: 50px;
+    input{
+        padding: 15px;
+        width: 50%;
+        border: 2px solid  rgb(222, 7, 132);
+        border-radius: 10px 0px 0px 10px;
+        outline:  rgb(222, 7, 132);
+    }
+    span{
+        background:rgb(222, 7, 132) ;
+        padding: 15px;
+        
+        border-radius: 0px 10px 10px 0px;
+        color: white;
+        font-family: sans-serif;
+    }
+    
+}
+.content-buttom{
+    margin-top: 30px;
+    span{
+        background:rgb(222, 7, 132) ;
+        padding:15px 30px 15px 30px;
+        margin: 25px;
+        color: white;
+        font-family: sans-serif;
+    }
+}

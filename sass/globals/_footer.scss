@@ -1,0 +1,29 @@
+footer{
+    // display: flex;
+    margin-top: 5%;
+    background:#B6B6B6;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.shop-title{
+    display: flex;
+    align-items: center;
+    margin-top: -25px;
+}
+.footer-center{
+    justify-content: center;
+    display: flex;
+    padding-top: 5%;
+}
+.footer-buttom{
+    text-align: center;
+    padding: 1% 0% 3% 0%;
+    font-size: 20px;
+    a{
+        text-decoration: none;
+    }
+    
+}
