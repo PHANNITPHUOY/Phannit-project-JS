@@ -1,21 +1,21 @@
 //------------------------Create Card-----------------------------------------//
 let products = [
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:"Chicaco", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:"Fruit lover", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:"Hot & spicy veg", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:"Ham", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:"Greek", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:" Cheeses", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:"Hawaiian", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:" Vegetariana", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:" Sicilian", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:"BBQ Chicken", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:" Meat ", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:"California", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:"Popperani", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:"Detroit", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:"Margherota", price:"$10"},
-    {img:"https://o.remove.bg/downloads/d7444396-9bb8-4f54-83d2-61fe754528d5/png-transparent-pizza-take-out-restaurant-normandin-pizza-removebg-preview.png", name:"Chinese", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Chicaco", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Fruit lover", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Hot & spicy veg", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Ham", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Greek", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Cheeses", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Hawaiian", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Vegetariana", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Sicilian", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"BBQ Chicken", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Meat ", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"California", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Popperani", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Detroit", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Margherota", price:"$10"},
+    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Chinese", price:"$10"},
 
 ]
 
@@ -26,7 +26,6 @@ let products = [
         card.className = "card";
         let image = document.createElement("img");
         image.src=products[index]["img"];
-        // console.log(image)
         let nameOfProduct = document.createElement("h3");
         nameOfProduct.textContent = products[index]["name"]
         let priceOfProduct = document.createElement("p");
@@ -36,15 +35,13 @@ let products = [
         card.appendChild(priceOfProduct);
         console.log(card);
         container.appendChild(card);
-        // console.log(container)
-        // console.log(image)
-
     }
  }
  displayProduct(products)
 
-
- //--------------------------------------------Input------------------------------------//
+//---------------------------------------------------------------------------------------//
+//--------------------------------------------Input--------------------------------------//
+//---------------------------------------------------------------------------------------//
 
 let getSearch = document.querySelector("#search");
 
