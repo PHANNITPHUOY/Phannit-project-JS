@@ -17,8 +17,8 @@ nav{
     span{
         color: rgb(222, 7, 132);
     }
-    h2{
-        margin-left: -30px;
+    img{
+        margin-top: -10px;
     }
 }
 ul{
@@ -37,5 +37,13 @@ ul{
 a:hover{
     background:rgb(222, 7, 132) ;
     color: white;
+    border-radius: 10px;
 }
+// .active{
+//     // border-bottom: 2px solid rgb(222, 7, 132);
+//     background:rgb(222, 7, 132) ;
+//     padding: 10px;
+//     border-radius: 10px;
+    
+// }
 
