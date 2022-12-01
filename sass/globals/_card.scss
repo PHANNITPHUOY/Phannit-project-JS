@@ -24,18 +24,23 @@
         color: $background;
         font-weight: bold;
     }
-    .icons{
-        padding: $border-radius;
-        margin-top: -15px;
-        justify-content: center;
-        display: flex;
-        margin-bottom: 5%;
-        i{
-            padding-left: 5px;
-        }
-    }
+    
 }
 #title-menu{
     margin-left: 4%;
     font-family: $myFont;
+}
+.buy{
+    background: $background;
+    padding: 10px;
+    border: none;
+    border-radius:5px ;
+    // color: white;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;  
 }

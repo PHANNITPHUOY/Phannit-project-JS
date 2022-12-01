@@ -1,5 +1,5 @@
 table{
-
+    // width: 100%;
     border-collapse:collapse ;
     margin: 0% 7% 7% 7%;
     
@@ -12,27 +12,21 @@ tr{
 th,td{
     border: 2px solid $background;
     padding: 10px 80px 10px 80px;
+  
     
 }
 th{
     font-size: 20px;
     background:  $background;
     color: white;
+    
 
 }
 .image img{
-    width: 250px;
+    width: 150px;
 }
-.trash, .edit{
+.delete_img, .edit_img{
     width: 40px;
-    
-    
-    
 }
-.action{
-    display: flex;
-}
-.action div{
-   margin-left: 1rem;
-}
+
 

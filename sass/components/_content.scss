@@ -14,7 +14,7 @@
     span{
         background:$background ;
         padding: 15px;
-        
+        color: white;
         border-radius: 0px $border-radius $border-radius 0px;
         color: white;
         font-family: $myFont;
@@ -33,12 +33,12 @@
     padding:15px 30px 15px 30px;
     margin: 25px;
     font-family: $myFont; 
-    border-radius: $border-radius;  
+    border-radius: $border-radius; 
      
    }
     a{
-       text-decoration: none;
-       color: white;     
+       text-decoration: none;   
+       color: white;
     }
 }
 
