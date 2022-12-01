@@ -1,21 +1,21 @@
 //------------------------Create Card-----------------------------------------//
 let products = [
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Chicaco", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Fruit lover", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Hot & spicy veg", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Ham", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Greek", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Cheeses", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Hawaiian", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Vegetariana", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Sicilian", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"BBQ Chicken", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Meat ", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"California", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Popperani", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Detroit", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Margherota", price:"$10"},
-    {img:"https://o.remove.bg/downloads/e4769bec-530e-448a-a9db-d64411dcbd8e/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Chinese", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:"Chicaco", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:"Fruit lover", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:"Hot & spicy veg", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:"Ham", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:"Greek", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:" Cheeses", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:"Hawaiian", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:" Vegetariana", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:" Sicilian", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:"BBQ Chicken", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:" Meat ", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:"California", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:"Popperani", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:"Detroit", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:"Margherota", price:"$10"},
+    {img:"https://o.remove.bg/downloads/93481a79-3965-4dfe-a68b-b0439751eae4/images-removebg-preview.png", name:"Chinese", price:"$10"},
 
 ]
 
@@ -53,6 +53,7 @@ let card = document.querySelectorAll(".card");
 function researchProduct(){
     for (let i in card){
         let word = card[i].children[1].textContent.toLowerCase();
+        console.log(word);
         let valueOfSearch = getSearch.value.toLowerCase();
         if (word.indexOf(valueOfSearch)>-1){
             card[i].style.display = "block";

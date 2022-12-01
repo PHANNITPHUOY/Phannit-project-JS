@@ -10,13 +10,13 @@ tr{
    
 }
 th,td{
-    border: 2px solid rgb(222, 7, 132);
+    border: 2px solid $background;
     padding: 10px 80px 10px 80px;
     
 }
 th{
     font-size: 20px;
-    background:  rgb(222, 7, 132);
+    background:  $background;
     color: white;
 
 }
@@ -31,13 +31,8 @@ th{
 }
 .action{
     display: flex;
-    justify-content: space-between;
-
-    // border: none;
-    width: 25%;
-    // margin-top: 10px;
 }
 .action div{
-    margin: 1rem;
+   margin-left: 1rem;
 }
 

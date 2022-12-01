@@ -11,7 +11,7 @@
 <body>
   <nav>
     <div class="nav-left">
-        <img src="/images/logo.png" alt="" width="100">
+        <img src="/images/logo1.png" alt="" width="50">
         <h2>SKY<span>SHOP</span></h2>
     </div>
     <div class="nav-center">
@@ -27,7 +27,27 @@
         </ul>
     </div>
 </nav>
-<button id="add-product-button">Add products</button>
+<button id="add-product-button" > Add products</button>
+<div id="dialog" style="display: none;">
+    <dialog open>
+        <header> Add Product </header>
+        <section>
+            <label> Product Picture: </label>
+            <input id="input-image" type="text" placeholder= "Input image of product (url)" />
+
+            <label> Product Name: </label>
+            <input id="input-name-product" type="text" placeholder="Input name of product"  />
+
+            <label> Product Price: </label>
+            <input id="input-price-product" type="text"  placeholder="Input price of product" />
+        </section>
+        <menu>
+            <button onclick="Cancel()" id="cancel"> Cancel </button>
+            <button onclick="create()" id="create"> Create </button>
+        </menu>
+    </dialog>
+</div>
+
 <table id="table">
   <thead>
     <tr>
@@ -37,111 +57,98 @@
       <th>Action</th>
     </tr>
   </thead>
-  <tbody class="add_Product">
+  <tbody class="add-tbody">
    
   </tbody>
 </table>
 <footer>
-  <div class="footer-top">
-      <div class="shop">
-          <h2>Shop</h2>
-          <div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Pizza</p>
-              </div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Burger</p>
-              </div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Cake</p>
-              </div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Drink</p>
-              </div>
-          </div>
-          
-      </div>
-      
-      <div class="contact">
-          <h2>Shop</h2>
-          <div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Pizza</p>
-              </div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Burger</p>
-              </div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Cake</p>
-              </div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Drink</p>
-              </div>
-          </div>
-          
-      </div>
-      <div class="contact">
-          <h2>Shop</h2>
-          <div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Pizza</p>
-              </div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Burger</p>
-              </div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Cake</p>
-              </div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Drink</p>
-              </div>
-          </div>
-          
-      </div>
-      <div class="contact">
-          <h2>Shop</h2>
-          <div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Pizza</p>
-              </div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Burger</p>
-              </div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Cake</p>
-              </div>
-              <div class="shop-title">
-                  <i class="material-icons">add</i>
-                  <p>Drink</p>
-              </div>
-          </div>
-          
-      </div>
-  </div>
-  <div class="footer-center">
-      <img src="/images/facebook.png" alt="" width="50">
-      <img src="/images/ist.png" alt="" width="60">
-      <img src="/images/twitter.png" alt="" width="50">
-  </div>
-  <div class="footer-buttom">
-      <a href="">www/skyshop.com</a>
-  </div>
-</footer>  
+    <div class="footer-top">
+        <div class="shop">
+            <h2>Shop</h2>
+            <div>
+                <div class="shop-title">
+                    <img src="/images/cat.png" alt="" width="25">
+                    <p>Cat</p>
+                </div>
+                <div class="shop-title">
+                    <img src="/images/dog.png" alt="" width="25">
+                    <p>Dog</p>
+                </div>
+                <div class="shop-title">
+                    <img src="/images/panda.png" alt="" width="25">
+                    <p>Panda</p>
+                </div>
+                <div class="shop-title">
+                    <img src="/images/rabbit.png" alt="" width="25">
+                    <p>Rabbit</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="service">
+            <h2>Services</h2>
+            <div>
+                <div class="shop-title">
+                    <img src="/images/easy.png" alt="" width="25">
+                    <p>Easy to order</p>
+                </div>
+                <div class="shop-title">
+                    <img src="/images/quality.png" alt="" width="23">
+                    <p>Quality</p>
+                </div>
+                <div class="shop-title">
+                    <img src="/images/fast.png" alt="" width="27">
+                    <p>Fast</p>
+                </div>
+                <div class="shop-title">
+                    <img src="/images/responsibity.png" alt="" width="25">
+                    <p>Responsibilily</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="address">
+            <h2>Address</h2>
+            <div class="shop-title">
+                <img id="home" src="/images/home.png" alt="" width="30">
+                <p>#BP 511, Phum Tropeang Chhuk <br> (Borey Sorla) Sangkat Tik Thla, <br> Khan Sen Sok,<br> Phnom Penh </p>
+            </div>
+            
+            
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <div>
+                <div class="shop-title">
+                    <img src="/images/call.png" alt="" width="23">
+                    <p>066 74 71 88</p>
+                </div>
+                <div class="shop-title">
+                    <img src="/images/facebook.png" alt="" width="25">
+                    <p>Sky online shop</p>
+                </div>
+                <div class="shop-title">
+                    <img src="/images/telegram.png" alt="" width="22">
+                    <p>066 74 71 88</p>
+                </div>
+                <div class="shop-title">
+                    <img src="/images/www.png" alt="" width="22">
+                    <p>www/skyshop.com</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer-center">
+        <img src="/images/facebook.png" alt="" width="50">
+        <img src="/images/ist.png" alt="" width="60">
+        <img src="/images/twitter.png" alt="" width="50">
+    </div>
+    <div class="footer-buttom">
+        <a href="">www/skyshop.com</a>
+    </div>
+</footer>
 </body>
 <script src="../js/create-product.js" ></script>
 </html>

@@ -7,17 +7,17 @@
     input{
         padding: 15px;
         width: 50%;
-        border: 2px solid  rgb(222, 7, 132);
-        border-radius: 10px 0px 0px 10px;
-        outline:  rgb(222, 7, 132);
+        border: 2px solid $background;
+        border-radius: $border-radius 0px 0px $border-radius;
+        outline: $background;
     }
     span{
-        background:rgb(222, 7, 132) ;
+        background:$background ;
         padding: 15px;
         
-        border-radius: 0px 10px 10px 0px;
+        border-radius: 0px $border-radius $border-radius 0px;
         color: white;
-        font-family: sans-serif;
+        font-family: $myFont;
     }
     
 }
@@ -25,15 +25,15 @@
     margin-top: 30px;
     
     :hover{
-        background:#B6B6B6;
+        background:$myGray;
         color: black;
     } 
     span{
-    background:rgb(222, 7, 132) ;
+    background:$background ;
     padding:15px 30px 15px 30px;
     margin: 25px;
-    font-family: sans-serif; 
-    border-radius: 10px;  
+    font-family: $myFont; 
+    border-radius: $border-radius;  
      
    }
     a{
