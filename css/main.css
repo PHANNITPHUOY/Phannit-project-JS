@@ -226,7 +226,7 @@ th {
 
 dialog {
   position: fixed;
-  top: 20vh;
+  top: 10vh;
   left: 25%;
   width: 50%;
   z-index: 100;
@@ -262,6 +262,7 @@ dialog label {
   display: block;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+  font-size: sans-serif;
 }
 
 dialog input {
@@ -301,6 +302,61 @@ dialog input {
   background: rgb(222, 7, 132);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: #B6B6B6;
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: rgb(222, 7, 132);
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set background-color: rgba(0, 0, 0, 0.75); a grey background color and center the text of the "sign in" section */
 body {
   margin: 0;
   padding: 0;

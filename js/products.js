@@ -1,21 +1,21 @@
 //------------------------Create Card-----------------------------------------//
 let products = [
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:"Chicaco", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:"Fruit lover", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:"Hot & spicy veg", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:"Ham", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:"Greek", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:" Cheeses", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:"Hawaiian", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:" Vegetariana", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:" Sicilian", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:"BBQ Chicken", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:" Meat ", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:"California", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:"Popperani", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:"Detroit", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:"Margherota", price:"$10"},
-    {img:"https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name:"Chinese", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Chicaco", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Fruit lover", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Hot & spicy veg", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Ham", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Greek", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Cheeses", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Hawaiian", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Vegetariana", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Sicilian", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"BBQ Chicken", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Meat ", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"California", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Popperani", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Detroit", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Margherota", price:"$10"},
+    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Chinese", price:"$10"},
 
 ]
 
@@ -56,8 +56,14 @@ function saveProducts() {
         
         let buttonBuy = document.createElement("button");
         buttonBuy.className = "buy";
-        buttonBuy.textContent = "Buy now";
+        let a = document.createElement("a");
+        // buttonBuy.textContent = "Details";
+        a.textContent = "Details";
+        a.href = "pages/detail.html";
+        
+        buttonBuy.appendChild(a);
         cardFooter.appendChild(buttonBuy);
+        console.log(buttonBuy)
         
         card.appendChild(image);
         card.appendChild(nameOfProduct);
@@ -104,3 +110,9 @@ function researchProduct(){
     }
 }
 researchProduct();
+
+
+
+
+
+

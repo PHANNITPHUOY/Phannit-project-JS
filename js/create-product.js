@@ -2,25 +2,25 @@ let getButtonAdd = document.querySelector("#add-product-button");
 let dialog = document.querySelector("#dialog");
 let products = [
   {
-    img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg",
+    img: "../images/4.png",
     name: "Chicaco",
     price: "$10"
   },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: "Fruit lover", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: "Hot & spicy veg", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: "Ham", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: "Greek", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: " Cheeses", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: "Hawaiian", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: " Vegetariana", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: " Sicilian", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: "BBQ Chicken", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: " Meat ", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: "California", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: "Popperani", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: "Detroit", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: "Margherota", price: "$10" },
-  { img: "https://mpng.subpng.com/20190921/tyc/transparent-cat-small-to-medium-sized-cats-british-shorthair-w-5d85b573b89ca4.5038171515690438277562.jpg", name: "Chinese", price: "$10" },
+  { img: "../images/4.png", name: "Fruit lover", price: "$10" },
+  { img: "../images/4.png", name: "Hot & spicy veg", price: "$10" },
+  { img: "../images/4.png", name: "Ham", price: "$10" },
+  { img: "../images/4.png", name: "Greek", price: "$10" },
+  { img: "../images/4.png", name: " Cheeses", price: "$10" },
+  { img: "../images/4.png", name: "Hawaiian", price: "$10" },
+  { img: "../images/4.png", name: " Vegetariana", price: "$10" },
+  { img: "../images/4.png", name: " Sicilian", price: "$10" },
+  { img: "../images/4.png", name: "BBQ Chicken", price: "$10" },
+  { img: "../images/4.png", name: " Meat ", price: "$10" },
+  { img: "../images/4.png", name: "California", price: "$10" },
+  { img: "../images/4.png", name: "Popperani", price: "$10" },
+  { img: "../images/4.png", name: "Detroit", price: "$10" },
+  { img: "../images/4.png", name: "Margherota", price: "$10" },
+  { img: "../images/4.png", name: "Chinese", price: "$10" },
 
 ]
 
@@ -77,18 +77,9 @@ function displayProducts() {
 
 
 
-    let td_edit = document.createElement("td"); //
+    let td_edit = document.createElement("td");
 
-    // createTr.appendChild(edit);
-    // let editImage = document.createElement("div");
-    // let editProduct = document.createElement("img");
-    // editProduct.className = "edit"
 
-    // editProduct.src = "../images/edit.png";
-    // createTr.appendChild(editProduct)
-
-    // editImage.appendChild(editProduct);
-    // buttons.appendChild(editImage);
     td_edit.className = "td_edit";
     let editImage = document.createElement("img");
     editImage.className = "edit_img";
@@ -115,15 +106,6 @@ function displayProducts() {
 
 
 
-    // let deleteImage = document.createElement("div");
-    // let deleteProduct = document.createElement("img");
-    // deleteProduct.className = "trash";
-    // deleteProduct.src = "../images/delete.png";
-    // createTr.appendChild(deleteProduct);
-    // deleteImage.appendChild(deleteProduct)
-
-    // buttons.appendChild(deleteImage);
-    // action.appendChild(buttons);
 
 
 
@@ -174,7 +156,10 @@ function create() {
 ////////////////////////////////////////////////////////////////
 function removeProduct(event){
   let index = event.target.parentElement.parentElement.dataset.index;
-  products.splice(index, 1);
+  let text = "Are you sure you want to remove this product?";
+  if (confirm(text)==true){
+    products.splice(index, 1);
+  }
   saveProducts();
   displayProducts();
 }
@@ -214,5 +199,6 @@ function Cancel() {
 }
 
 
-saveProducts();
+// saveProducts();
 loadProducts();
+displayProducts();
