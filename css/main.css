@@ -20,7 +20,7 @@ nav {
   color: rgb(222, 7, 132);
 }
 .nav-left img {
-  margin-top: 10px;
+  margin-top: 5px;
   height: 50px;
 }
 
@@ -357,6 +357,69 @@ a {
 }
 
 /* Set background-color: rgba(0, 0, 0, 0.75); a grey background color and center the text of the "sign in" section */
+#detail-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+#detail-product img {
+  width: 300px;
+}
+
+.detail-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  justify-content: center;
+}
+
+#back, #add-cart {
+  background: rgb(222, 7, 132);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.detail-footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+#back {
+  margin-right: 10%;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-top {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 5%;
+}
+
+.cart-top, .cart-top-left {
+  display: flex;
+}
+
+.cart-top-left img {
+  width: 100px;
+  height: 100px;
+}
+
+.cart-top-right img {
+  width: 50px;
+  margin-top: 50%;
+}
+
 body {
   margin: 0;
   padding: 0;

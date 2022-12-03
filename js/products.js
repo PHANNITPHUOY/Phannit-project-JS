@@ -1,90 +1,56 @@
-//------------------------Create Card-----------------------------------------//
-let products = [
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Chicaco", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Fruit lover", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Hot & spicy veg", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Ham", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Greek", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Cheeses", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Hawaiian", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Vegetariana", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Sicilian", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"BBQ Chicken", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:" Meat ", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"California", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Popperani", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Detroit", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Margherota", price:"$10"},
-    {img:"https://o.remove.bg/downloads/7ea89ea4-a91a-46e0-a5e2-ba773013e2da/png-transparent-cat-animal-lovely-cat-removebg-preview.png", name:"Chinese", price:"$10"},
 
-]
+let datas = JSON.parse(localStorage.getItem("products"));
 
 
-function saveProducts() {
-    localStorage.setItem("products", JSON.stringify(products));
-    console.log(localStorage.setItem)
+
+//============================Hide===========================================//
+function hide(event) {
+    event.style.display = 'none';
   }
-  
-  function loadProducts() {
-    let productStorage = JSON.parse(localStorage.getItem("products"));
-    if (productStorage !== null) {
-      products = productStorage;
-    }
+  //============================Show===========================================//
+  function show(event) {
+    event.style.display = '';
   }
- let container = document.querySelector(".list-items");
- function displayProduct(){
-    for(let index in products){
-        let card = document.createElement("div");
-        card.className = "card";
-        let image = document.createElement("img");
-        image.src=products[index]["img"];
-        let nameOfProduct = document.createElement("h3");
-        nameOfProduct.textContent = products[index]["name"]
-        let priceOfProduct = document.createElement("p");
-        priceOfProduct.textContent = products[index]["price"];
-        let cardFooter = document.createElement("div");
-        cardFooter.className = "card-footer";
-        let star = document.createElement("div");
-        star.className = "icons"
-        for (let i = 0; i < 5; i++) {
-            let i = document.createElement("i");
-            i.className = "material-icons";
-            i.textContent ="star"
-            star.appendChild(i);
-        };
-        cardFooter.appendChild(star)
-        
-        let buttonBuy = document.createElement("button");
-        buttonBuy.className = "buy";
-        let a = document.createElement("a");
-        // buttonBuy.textContent = "Details";
-        a.textContent = "Details";
-        a.href = "pages/detail.html";
-        
-        buttonBuy.appendChild(a);
-        cardFooter.appendChild(buttonBuy);
-        console.log(buttonBuy)
-        
-        card.appendChild(image);
-        card.appendChild(nameOfProduct);
-        card.appendChild(priceOfProduct);
-        card.appendChild(cardFooter);
-        container.appendChild(card);
-    }
-    loadProducts();
+
+let container = document.querySelector(".list-items");
+function displayProduct(){
+   for(let index in datas){
+     
+
+    let card = document.createElement("div");
+    card.className = "card";
+    card.dataset.index = index;
+    let image = document.createElement("img");
+    image.src=datas[index]["img"];
+    image.addEventListener("click", showDetailsProduct);
+    let nameOfProduct = document.createElement("h3");
+    nameOfProduct.textContent = datas[index]["name"]
+    let priceOfProduct = document.createElement("p");
+    priceOfProduct.textContent = datas[index]["price"];
+    let cardFooter = document.createElement("div");
+    cardFooter.className = "card-footer";
+    let star = document.createElement("div");
+    star.className = "icons"
+    for (let i = 0; i < 5; i++) {
+        let i = document.createElement("i");
+        i.className = "material-icons";
+        i.textContent ="star"
+        star.appendChild(i);
+    };
+    cardFooter.appendChild(star)
+    
+    let buttonBuy = document.createElement("button");
+    buttonBuy.className = "buy";
+    buttonBuy.textContent = "Add cart";
+    cardFooter.appendChild(buttonBuy);
+    
+    card.appendChild(image);
+    card.appendChild(nameOfProduct);
+    card.appendChild(priceOfProduct);
+    card.appendChild(cardFooter);
+    container.appendChild(card);
+   }
  }
-
-
-
-
-
-
-  
-  //---------------------------------------------------------------------------------------//
-  //--------------------------------------------Input--------------------------------------//
-  //---------------------------------------------------------------------------------------//
-
-loadProducts();
 displayProduct();
 
 
@@ -110,6 +76,74 @@ function researchProduct(){
     }
 }
 researchProduct();
+
+
+
+
+
+
+//================================================================//
+
+function showDetailsProduct(event){
+    hide(container);
+    let detailProduct = document.querySelector("#detail-product");
+    
+    let index =event.target.parentElement.dataset.index;
+    let imageOfDetail = document.createElement("img");
+    imageOfDetail.src= datas[index]["img"];
+    detailProduct.appendChild(imageOfDetail);
+    let detailText = document.createElement("div");
+    detailText.className = "detail-text";
+
+    let nameOfDetail = document.createElement("h3");
+    nameOfDetail.textContent = datas[index]["name"];
+    detailText.appendChild(nameOfDetail);
+
+    let priceOfDetail = document.createElement("p");
+    priceOfDetail.textContent =datas[index]["price"];
+    detailText.appendChild(priceOfDetail);
+    
+    let iconOfDetail = document.createElement("div");
+    iconOfDetail.className =  "iconsOfDetail";
+    for (let i = 0; i < 5; i++) {
+        let i = document.createElement("i");
+        i.className = "material-icons";
+        i.textContent ="star"
+        iconOfDetail.appendChild(i);
+    };
+    detailText.appendChild(iconOfDetail);
+
+    let textOfDetail = document.createElement("p");
+    textOfDetail.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
+    detailText.appendChild(textOfDetail);
+
+    let buttonOfDetail = document.createElement("div");
+    buttonOfDetail.className = "detail-footer";
+    let buttonBack = document.createElement("button");
+    buttonBack.id = "back";
+    buttonBack.addEventListener("click",buttonOfBack);
+    buttonBack.textContent= "Back";
+    buttonOfDetail.appendChild(buttonBack);
+
+    let buttonOfAddCart = document.createElement("button");
+    buttonOfAddCart.id = "add-cart";
+    buttonOfAddCart.textContent = "Add cart";
+    buttonOfDetail.appendChild(buttonOfAddCart);
+    detailText.appendChild(buttonOfDetail);
+    detailProduct.appendChild(detailText);
+
+}
+
+function buttonOfBack(){
+    show(container)
+    document.querySelector("#detail-product").style.display="none";
+    location.reload();
+   
+}
+
+    
+
+  
 
 
 

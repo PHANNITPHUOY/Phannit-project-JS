@@ -1,49 +1,41 @@
 let getButtonAdd = document.querySelector("#add-product-button");
 let dialog = document.querySelector("#dialog");
+
+//===========================DATAS OF PRODUCTS =========================//
 let products = [
-  {
-    img: "../images/4.png",
-    name: "Chicaco",
-    price: "$10"
-  },
-  { img: "../images/4.png", name: "Fruit lover", price: "$10" },
-  { img: "../images/4.png", name: "Hot & spicy veg", price: "$10" },
-  { img: "../images/4.png", name: "Ham", price: "$10" },
-  { img: "../images/4.png", name: "Greek", price: "$10" },
-  { img: "../images/4.png", name: " Cheeses", price: "$10" },
-  { img: "../images/4.png", name: "Hawaiian", price: "$10" },
-  { img: "../images/4.png", name: " Vegetariana", price: "$10" },
-  { img: "../images/4.png", name: " Sicilian", price: "$10" },
-  { img: "../images/4.png", name: "BBQ Chicken", price: "$10" },
-  { img: "../images/4.png", name: " Meat ", price: "$10" },
-  { img: "../images/4.png", name: "California", price: "$10" },
-  { img: "../images/4.png", name: "Popperani", price: "$10" },
-  { img: "../images/4.png", name: "Detroit", price: "$10" },
-  { img: "../images/4.png", name: "Margherota", price: "$10" },
-  { img: "../images/4.png", name: "Chinese", price: "$10" },
-
-]
+  {img: "../images/1.png",name: "chicaco.png",price: "$10", type: "Pizza"},
+  {img: "../images/2.png",name: "chicaco.png",price: "$10", type: "Pizza"},
+  {img: "../images/3.png",name: "chicaco.png",price: "$10", type: "Pizza"},
+  {img: "../images/4.png",name: "chicaco.png",price: "$10", type: "Pizza"},
+  {img: "../images/16.png",name: "chicaco.png",price: "$10", type: "Burger"},
+  {img: "../images/17.png",name: "chicaco.png",price: "$10", type: "Burger"},
+  {img: "../images/18.png",name: "chicaco.png",price: "$10", type: "Burger"},
+  {img: "../images/19.png",name: "chicaco.png",price: "$10", type: "Burger"},
+  {img: "../images/32.png",name: "chicaco.png",price: "$10", type: "Cake"},
+  {img: "../images/32.png",name: "chicaco.png",price: "$10", type: "Cake"},
+  {img: "../images/32.png",name: "chicaco.png",price: "$10", type: "Cake"},
+  {img: "../images/32.png",name: "chicaco.png",price: "$10", type: "Cake"},
+  {img: "../images/48.png",name: "chicaco.png",price: "$10", type: "Drinks"},
+  {img: "../images/49.png",name: "chicaco.png",price: "$10", type: "Drinks"},
+  {img: "../images/50.png",name: "chicaco.png",price: "$10", type: "Drinks"},
+  {img: "../images/51.png",name: "chicaco.png",price: "$10", type: "Drinks"},
+];
 
 
-
+//============================Hide===========================================//
 function hide(event) {
   event.style.display = 'none';
 }
+//============================Show===========================================//
 function show(event) {
   event.style.display = 'block';
 }
 
 
 
-
-
-
-
-
 let i = 0;
 let table = document.querySelector("#table");
 function displayProducts() {
-  // document.querySelector(".add-tbody").remove();
   let myTbody = document.querySelector(".add-tbody");
   if (myTbody != null) {
     myTbody.remove();
@@ -51,35 +43,27 @@ function displayProducts() {
   let tbody = document.createElement("tbody");
   tbody.className = "add-tbody";
 
-  // ==============table =============
+  //============================= CREATE TABLE =============================//
   for (let i = 0; i < products.length; i++) {
     let product = products[i];
-
+    console.log(product)
     let createTr = document.createElement("tr");
     createTr.dataset.index = i;
     console.log(createTr)
-
     let createTd = document.createElement("td");
     createTd.className = "image";
     createTr.appendChild(createTd);
-
     let image = document.createElement("img");
-    image.src = product.img
+    
+    image.src = product.img;
     createTd.appendChild(image)
-
     let nameProduct = document.createElement("td");
     nameProduct.textContent = product.name;
     createTr.appendChild(nameProduct);
-
     let price = document.createElement("td");
     price.textContent = product.price;
     createTr.appendChild(price);
-
-
-
     let td_edit = document.createElement("td");
-
-
     td_edit.className = "td_edit";
     let editImage = document.createElement("img");
     editImage.className = "edit_img";
@@ -87,29 +71,14 @@ function displayProducts() {
     editImage.src = "../images/edit.png";
     td_edit.appendChild(editImage);
     createTr.appendChild(td_edit);
-
     let td_delete = document.createElement("td");
     td_delete.className = "delete";
     deleteImage = document.createElement("img");
     deleteImage.addEventListener("click",removeProduct);
     deleteImage.className = "delete_img"
     deleteImage.src = "../images/delete.png";
-
     td_delete.appendChild(deleteImage);
     createTr.appendChild(td_delete)
-
-
-
-
-
-
-
-
-
-
-
-
-
     tbody.appendChild(createTr);
   }
   table.appendChild(tbody);
@@ -118,42 +87,38 @@ displayProducts();
 
 
 
-//------------------------------------------------------------------------//
-//------------------------------------------------------------------------//
+//============================SAVE DATAS FROM LOCAL STORAGE============================//
 function saveProducts() {
   localStorage.setItem("products", JSON.stringify(products));
   console.log(localStorage.setItem)
 }
 
+//============================GET TADAS FROM LOCAL STORAGE============================//
 function loadProducts() {
   let productStorage = JSON.parse(localStorage.getItem("products"));
   if (productStorage !== null) {
     products = productStorage;
   }
 }
+//============================CREATE PRODUCT=============================//
 function create() {
   hide(dialog); 
   document.querySelector("#create").textContent ="Create";
-
   let dic = {};
   let inputOfImage = document.querySelector("#input-image");
   let inputOfName = document.querySelector("#input-name-product");
   let inputOfPrice = document.querySelector("#input-price-product");
-
+  let inputOfType = document.querySelector("#select");
   dic.img = inputOfImage.value;
   dic.name = inputOfName.value;
   dic.price = inputOfPrice.value;
+  dic.type = inputOfType.value;
   products.push(dic);
   saveProducts();
   displayProducts();
 }
 
-
-
-
-
-////--  ---------------------------------------////
-////////////////////////////////////////////////////////////////
+//============================REMOVE PRODUCTS============================//
 function removeProduct(event){
   let index = event.target.parentElement.parentElement.dataset.index;
   let text = "Are you sure you want to remove this product?";
@@ -163,6 +128,8 @@ function removeProduct(event){
   saveProducts();
   displayProducts();
 }
+
+//============================
 function editProduct(event){
   show(dialog);
   document.querySelector("#create").textContent = "Edit";
@@ -171,9 +138,11 @@ function editProduct(event){
   let inputOfImage = document.querySelector("#input-image");
   let inputOfName = document.querySelector("#input-name-product");
   let inputOfPrice = document.querySelector("#input-price-product");
+  let inputOfTypes = document.querySelector("#select");
   inputOfImage.value = products[index].img;
   inputOfName.value = products[index].name;
   inputOfPrice.value = products[index].price;
+  inputOfTypes.value = products[index].type;
 
   products.splice(index, 1);
   saveProducts();
