@@ -11,7 +11,8 @@ function hide(event) {
   function show(event) {
     event.style.display = '';
   }
-
+let content = document.querySelector(".content");
+let title = document.querySelector(".title");
 let container = document.querySelector(".list-items");
 function displayProduct(){
    for(let index in datas){
@@ -42,6 +43,10 @@ function displayProduct(){
     let buttonBuy = document.createElement("button");
     buttonBuy.className = "buy";
     buttonBuy.textContent = "Add cart";
+    buttonBuy.dataset.index = index;
+    // console.log(buttonBuy);
+    // buttonBuy.addEventListener("click", addCart);
+
     cardFooter.appendChild(buttonBuy);
     
     card.appendChild(image);
@@ -54,28 +59,8 @@ function displayProduct(){
 displayProduct();
 
 
-let getSearch = document.querySelector("#search");
 
-getSearch.addEventListener("keyup", researchProduct);
-console.log(getSearch);
 
-let card = document.querySelectorAll(".card");
-
-function researchProduct(){
-    for (let i in card){
-        let word = card[i].children[1].textContent.toLowerCase();
-        console.log(word);
-        let valueOfSearch = getSearch.value.toLowerCase();
-        if (word.indexOf(valueOfSearch)>-1){
-            card[i].style.display = "block";
-        }
-        else{
-            card[i].style.display = "none";
-        }
-        
-    }
-}
-researchProduct();
 
 
 
@@ -86,6 +71,8 @@ researchProduct();
 
 function showDetailsProduct(event){
     hide(container);
+    hide(title);
+    hide(content);
     let detailProduct = document.querySelector("#detail-product");
     
     let index =event.target.parentElement.dataset.index;
@@ -114,7 +101,7 @@ function showDetailsProduct(event){
     detailText.appendChild(iconOfDetail);
 
     let textOfDetail = document.createElement("p");
-    textOfDetail.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
+    textOfDetail.textContent = "Fast food is a type of mass-produced food designed for commercial resale.";
     detailText.appendChild(textOfDetail);
 
     let buttonOfDetail = document.createElement("div");
@@ -133,13 +120,39 @@ function showDetailsProduct(event){
     detailProduct.appendChild(detailText);
 
 }
-
+ //=============================================================//
 function buttonOfBack(){
     show(container)
     document.querySelector("#detail-product").style.display="none";
     location.reload();
    
 }
+
+
+
+//================================================================//
+let getSearch = document.querySelector("#search");
+
+getSearch.addEventListener("keyup", researchProduct);
+console.log(getSearch);
+
+let card = document.querySelectorAll(".card");
+
+function researchProduct(){
+    for (let i in card){
+        let word = card[i].children[1].textContent.toLowerCase();
+        console.log(word);
+        let valueOfSearch = getSearch.value.toLowerCase();
+        if (word.indexOf(valueOfSearch)>-1){
+            card[i].style.display = "block";
+        }
+        else{
+            card[i].style.display = "none";
+        }
+        
+    }
+}
+researchProduct();
 
     
 

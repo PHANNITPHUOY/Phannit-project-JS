@@ -206,7 +206,7 @@ tr {
 }
 
 th, td {
-  border: 2px solid rgb(222, 7, 132);
+  border: 1px solid #B6B6B6;
   padding: 10px 80px 10px 80px;
 }
 
@@ -310,9 +310,14 @@ dialog input {
 .container {
   padding: 16px;
   background-color: #B6B6B6;
-  width: 50%;
+  width: 30%;
   margin: auto;
   margin-top: 5%;
+  border-radius: 5px;
+}
+
+.container-head {
+  display: flex;
 }
 
 /* Full-width input fields */
@@ -323,6 +328,7 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: none;
   background: #f1f1f1;
+  border-radius: 5px;
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -345,6 +351,7 @@ hr {
   border: none;
   cursor: pointer;
   width: 100%;
+  border-radius: 5px;
 }
 
 .registerbtn:hover {
@@ -365,6 +372,10 @@ a {
 }
 #detail-product img {
   width: 300px;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 .detail-text {
@@ -397,12 +408,16 @@ a {
   align-items: center;
   flex-direction: column;
   align-items: center;
+  background: rgba(128, 128, 128, 0.148);
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
 }
 
 .cart-top {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 90%;
   margin: 5%;
 }
 
@@ -413,11 +428,32 @@ a {
 .cart-top-left img {
   width: 100px;
   height: 100px;
+  margin-right: 20px;
 }
 
 .cart-top-right img {
   width: 50px;
   margin-top: 50%;
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #B6B6B6;
+  padding: 10px;
+}
+.cart-footer p {
+  margin-right: 10px;
+  width: 30%;
+}
+
+#checkout {
+  width: 100px;
+  background: rgb(222, 7, 132);
+  border: none;
+  margin-left: 5%;
+  border-radius: 5px;
 }
 
 body {

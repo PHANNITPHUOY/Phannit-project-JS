@@ -10,12 +10,15 @@
         width: 300px;
     }
 }
+h3{
+    font-size: 30px;
+}
 .detail-text{
     display: flex;
     flex-direction: column;
     margin-left: 10%;
     justify-content: center;
-    // flex: 1;
+    
 }
 #back, #add-cart{
     background: $background;

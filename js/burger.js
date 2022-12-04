@@ -1,5 +1,6 @@
 let datas = JSON.parse(localStorage.getItem("products"));
-
+let content = document.querySelector(".content");
+let title = document.querySelector(".title");
 
  let container = document.querySelector(".list-items");
  function displayProduct(){
@@ -57,6 +58,8 @@ function show(event) {
   
 function showDetailsProduct(event){
   hide(container);
+  hide(title);
+  hide(content);
   let detailProduct = document.querySelector("#detail-product");
   
   let index =event.target.parentElement.dataset.index;

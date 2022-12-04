@@ -3,22 +3,28 @@ let dialog = document.querySelector("#dialog");
 
 //===========================DATAS OF PRODUCTS =========================//
 let products = [
-  {img: "../images/1.png",name: "chicaco.png",price: "$10", type: "Pizza"},
-  {img: "../images/2.png",name: "chicaco.png",price: "$10", type: "Pizza"},
-  {img: "../images/3.png",name: "chicaco.png",price: "$10", type: "Pizza"},
-  {img: "../images/4.png",name: "chicaco.png",price: "$10", type: "Pizza"},
-  {img: "../images/16.png",name: "chicaco.png",price: "$10", type: "Burger"},
-  {img: "../images/17.png",name: "chicaco.png",price: "$10", type: "Burger"},
-  {img: "../images/18.png",name: "chicaco.png",price: "$10", type: "Burger"},
-  {img: "../images/19.png",name: "chicaco.png",price: "$10", type: "Burger"},
-  {img: "../images/32.png",name: "chicaco.png",price: "$10", type: "Cake"},
-  {img: "../images/32.png",name: "chicaco.png",price: "$10", type: "Cake"},
-  {img: "../images/32.png",name: "chicaco.png",price: "$10", type: "Cake"},
-  {img: "../images/32.png",name: "chicaco.png",price: "$10", type: "Cake"},
-  {img: "../images/48.png",name: "chicaco.png",price: "$10", type: "Drinks"},
-  {img: "../images/49.png",name: "chicaco.png",price: "$10", type: "Drinks"},
-  {img: "../images/50.png",name: "chicaco.png",price: "$10", type: "Drinks"},
-  {img: "../images/51.png",name: "chicaco.png",price: "$10", type: "Drinks"},
+  {img: "../images/1.png",name: "Friut lovers",price: "$10", type: "Pizza"},
+  {img: "../images/2.png",name: "Cheese",price: "$10", type: "Pizza"},
+  {img: "../images/3.png",name: "Greek",price: "$10", type: "Pizza"},
+  {img: "../images/4.png",name: "Ham",price: "$10", type: "Pizza"},
+  {img: "../images/5.png",name: "Hot & Spicy",price: "$10", type: "Pizza"},
+  {img: "../images/6.png",name: "meat",price: "$10", type: "Pizza"},
+  {img: "../images/7.png",name: "Monako",price: "$10", type: "Pizza"},
+  {img: "../images/8.png",name: "Neapolitan",price: "$10", type: "Pizza"},
+  {img: "../images/16.png",name: "Turkey burger",price: "$10", type: "Burger"},
+  {img: "../images/17.png",name: "Portobello",price: "$10", type: "Burger"},
+  {img: "../images/18.png",name: "Veggie",price: "$10", type: "Burger"},
+  {img: "../images/19.png",name: "Wild salmon",price: "$10", type: "Burger"},
+  {img: "../images/35.png",name: "Fruits",price: "$10", type: "Cake"},
+  {img: "../images/35.png",name: "Fruits",price: "$10", type: "Cake"},
+  {img: "../images/35.png",name: "Fruits",price: "$10", type: "Cake"},
+  {img: "../images/35.png",name: "Fruits",price: "$10", type: "Cake"},
+  {img: "../images/48.png",name: "Heineken",price: "$10", type: "Drinks"},
+  {img: "../images/49.png",name: "Tiger",price: "$10", type: "Drinks"},
+  {img: "../images/51.png",name: "Chang",price: "$10", type: "Drinks"},
+  {img: "../images/52.png",name: "Singha",price: "$10", type: "Drinks"},
+  {img: "../images/53.png",name: "Blue berry",price: "$10", type: "Drinks"},
+  {img: "../images/54.png",name: "Strawberry",price: "$10", type: "Drinks"},
 ];
 
 
@@ -46,10 +52,10 @@ function displayProducts() {
   //============================= CREATE TABLE =============================//
   for (let i = 0; i < products.length; i++) {
     let product = products[i];
-    console.log(product)
+    // console.log(product)
     let createTr = document.createElement("tr");
     createTr.dataset.index = i;
-    console.log(createTr)
+    // console.log(createTr)
     let createTd = document.createElement("td");
     createTd.className = "image";
     createTr.appendChild(createTd);
