@@ -160,6 +160,7 @@ researchProduct();
 
 
 
+displayProducts();
 
 
 
